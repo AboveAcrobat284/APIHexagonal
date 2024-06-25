@@ -5,10 +5,10 @@ import { createUser, getUserById, getAllUsers, updateUser, deleteUserById } from
 const app = express();
 app.use(express.json());
 
-app.post('/api/users', createUser); // Ruta correcta para crear un usuario
-app.get('/api/users/:id', getUserById); // Ruta para obtener un usuario por ID
-app.get('/api/users', getAllUsers); // Ruta para obtener todos los usuarios
-app.put('/api/users/:id', updateUser); // Ruta para actualizar un usuario por ID
-app.delete('/api/users/:id', deleteUserById); // Ruta para eliminar un usuario por ID
+app.post('/api/users', createUser);
+app.get('/api/users/:id', getUserById);
+app.get('/api/users', getAllUsers);
+app.put('/api/users/:id', updateUser);
+app.delete('/api/users/:id', deleteUserById);
 
 export default app;
